@@ -1,0 +1,55 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Configurações globais */
+
+:root {
+    --backgroumd-header: #122A57;
+    --font-color: #FFFFFF;
+}
+
+* {
+    color: var(--font-color);
+    box-sizing: border-box;
+}
+
+/* Estilizações do header */
+
+.flex-container {
+    display: flex;
+    max-width: 62rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header-menu {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--backgroumd-header);
+    font-family: 'Roboto', sans-serif;
+    height: 6.25rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.header-list-items ul {
+    display: flex;
+}
+
+.header-list-items li:not(:last-child){
+    margin-right: 1rem;
+}
+
+.header-list-items a {
+    text-decoration: none;
+}
+
+/* estilização do section sobre empresa */
+
