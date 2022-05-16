@@ -4,7 +4,7 @@
 
 # Histórico de atualização do projeto:
 
-10/05/2022 - Foi criado a estrutura HTML do projeto e foi estilizado o menu do site.
+10/05/2022 - Foi criado a estrutura HTML do projeto e foi estilizado o menu do site.<br>
 16/05/2022 - Foi acrescentado responsividade na section apresentação e quem somos e também foi estilizado ambas áreas do site.
 
 
