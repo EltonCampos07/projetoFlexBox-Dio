@@ -53,3 +53,134 @@ header h1 {
 
 /* estilização do section sobre empresa */
 
+.apresentacao {
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.texto-apresentacao {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-apresentacao h1, p {
+    color: var(--backgroumd-header);
+}
+
+.texto-apresentacao h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: block;
+    background-color: var(--backgroumd-header);
+    width: 13.75rem;
+    height: 3.125rem;
+    text-align: center;
+    line-height: 3.125rem;
+    text-decoration: none;
+    border-radius: 1.875rem;
+    margin: 1rem 0rem;
+}
+
+.imagem-apresentacao img {
+    display: block;
+    width: 100%;
+}
+
+/* section quem somos */
+
+#quem-somos {
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#quem-somos h2 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--backgroumd-header);
+    margin-bottom: 1.25rem;
+}
+
+#quem-somos h2::before {
+    content: '';
+    height: 3.125rem;
+    width: 0.3125rem;
+    margin-right: 0.3125rem;
+    background-color: var(--backgroumd-header);
+    position: relative;
+}
+
+.quem-somos-texto p {
+    margin-bottom: 1rem;
+}
+
+.quem-somos-texto {
+    max-width: 50%; 
+}
+
+/* Responsividade do site */
+
+@media (max-width: 900px){
+
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-apresentacao {
+        margin-bottom: 1rem;
+    }
+
+    .texto-apresentacao h1 {
+        text-align: center;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    .quem-somos-texto {
+        max-width: 90%; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
