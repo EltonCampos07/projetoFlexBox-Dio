@@ -19,7 +19,7 @@
     display: flex;
     max-width: 62rem;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .header-menu {
@@ -27,11 +27,14 @@
     justify-content: space-between;
 }
 
-header {
+header, main {
     display: flex;
     justify-content: center;
     background-color: var(--backgroumd-header);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+}
+
+header {
     height: 6.25rem;
 }
 
@@ -124,6 +127,53 @@ header h1 {
     max-width: 50%; 
 }
 
+/* estilização do conteúdo principal */
+
+#servicos {
+    flex-direction: column;
+}
+
+#servicos h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.list-item div img {
+    max-height: 12.5rem;
+}
+
+.list-item p {
+    color: var(--font-color);
+    margin-top: 2rem;
+}
+
+.list-item a {
+    display: block;
+    height: 3.125rem;
+    width: 13.75rem;
+    border-radius: 2rem;
+    background-color: var(--font-color);
+    text-align: center;
+    line-height: 3.125rem;
+    color: var(--backgroumd-header);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 2rem 0rem;
+}
+
 /* Responsividade do site */
 
 @media (max-width: 900px){
@@ -147,6 +197,16 @@ header h1 {
 
     .quem-somos-texto {
         max-width: 90%; 
+    }
+
+    #servicos h2 {
+        margin: 1.25rem 1rem;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
